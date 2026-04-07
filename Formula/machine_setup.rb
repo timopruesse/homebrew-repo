@@ -1,6 +1,8 @@
 class MachineSetup < Formula
   desc "CLI tool with TUI for automating machine configuration and setup tasks"
   homepage "https://github.com/timopruesse/machine_setup"
+  url "https://github.com/timopruesse/machine_setup/releases/download/v2.0.0/machine_setup-x86_64-unknown-linux-gnu.tar.gz"
+  sha256 "825147d25a0bc16454f6717ce27543c96805e672d84d099e6a638dc39d9413d8"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
@@ -11,16 +13,6 @@ class MachineSetup < Formula
     on_intel do
       url "https://github.com/timopruesse/machine_setup/releases/download/v2.0.0/machine_setup-x86_64-apple-darwin.tar.gz"
       sha256 "0375a72ad38bc93c339b6054e4aed5283fb52730201c55590f20600e5e93a01b"
-    end
-  end
-
-  on_linux do
-    on_intel do
-      url "https://github.com/timopruesse/machine_setup/releases/download/v2.0.0/machine_setup-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "825147d25a0bc16454f6717ce27543c96805e672d84d099e6a638dc39d9413d8"
-    end
-    on_arm do
-      depends_on arch: :x86_64
     end
   end
 
