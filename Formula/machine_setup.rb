@@ -15,9 +15,13 @@ class MachineSetup < Formula
   end
 
   on_linux do
-    depends_on arch: :x86_64
-    url "https://github.com/timopruesse/machine_setup/releases/download/v2.0.0/machine_setup-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "825147d25a0bc16454f6717ce27543c96805e672d84d099e6a638dc39d9413d8"
+    on_intel do
+      url "https://github.com/timopruesse/machine_setup/releases/download/v2.0.0/machine_setup-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "825147d25a0bc16454f6717ce27543c96805e672d84d099e6a638dc39d9413d8"
+    end
+    on_arm do
+      depends_on arch: :x86_64
+    end
   end
 
   def install
