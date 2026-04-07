@@ -5,18 +5,21 @@ class MachineSetup < Formula
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
-    if Hardware::CPU.arm?
+    on_arm do
       url "https://github.com/timopruesse/machine_setup/releases/download/v#{version}/machine_setup-aarch64-apple-darwin.tar.gz"
       sha256 "9b5641cb60ef94849e7d4c4aaad005abda6b8c908ff2362f05ac4fee3264fc52"
-    else
+    end
+    on_intel do
       url "https://github.com/timopruesse/machine_setup/releases/download/v#{version}/machine_setup-x86_64-apple-darwin.tar.gz"
       sha256 "0375a72ad38bc93c339b6054e4aed5283fb52730201c55590f20600e5e93a01b"
     end
   end
 
   on_linux do
-    url "https://github.com/timopruesse/machine_setup/releases/download/v#{version}/machine_setup-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "825147d25a0bc16454f6717ce27543c96805e672d84d099e6a638dc39d9413d8"
+    on_intel do
+      url "https://github.com/timopruesse/machine_setup/releases/download/v#{version}/machine_setup-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "825147d25a0bc16454f6717ce27543c96805e672d84d099e6a638dc39d9413d8"
+    end
   end
 
   def install
