@@ -1,10 +1,14 @@
-# Chroma91 Homebrew Formulas
+# Homebrew Formulas
 
 ## How do I install these formulae?
 
-`brew install chroma91/repo/<formula>`
+`brew install timopruesse/repo/<formula>`
 
-Or `brew tap chroma91/repo` and then `brew install <formula>`.
+Or `brew tap timopruesse/repo` and then `brew install <formula>`.
+
+### Available formulae
+
+- **machine_setup** — CLI tool with TUI for automating machine configuration and setup tasks
 
 ## Documentation
 
