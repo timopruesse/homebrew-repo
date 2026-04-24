@@ -1,8 +1,8 @@
 class MachineSetup < Formula
   desc "CLI tool with TUI for automating machine configuration and setup tasks"
   homepage "https://github.com/timopruesse/machine_setup"
-  url "https://github.com/timopruesse/machine_setup/archive/refs/tags/v2.4.0.tar.gz"
-  sha256 "9e68a31971145e6dc6eb22ae8e9601f5fb4f3f1aec6721f19ff29da0cce54ff3"
+  url "https://github.com/timopruesse/machine_setup/archive/refs/tags/v2.4.1.tar.gz"
+  sha256 "a6597adc8ba7c3a4ec35822c869af6cff6e5c80c5a29837e749deff587a7ed0d"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
