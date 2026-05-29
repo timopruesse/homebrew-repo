@@ -7,12 +7,12 @@ class MachineSetup < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/timopruesse/machine_setup/releases/download/v2.0.0/machine_setup-aarch64-apple-darwin.tar.gz"
-      sha256 "9b5641cb60ef94849e7d4c4aaad005abda6b8c908ff2362f05ac4fee3264fc52"
+      url "https://github.com/timopruesse/machine_setup/releases/download/v2.4.1/machine_setup-aarch64-apple-darwin.tar.gz"
+      sha256 "e77691b48998875b4cc3bec924f7197660fefd98012801a0fead9f4c5fb2b14f"
     end
     on_intel do
-      url "https://github.com/timopruesse/machine_setup/releases/download/v2.0.0/machine_setup-x86_64-apple-darwin.tar.gz"
-      sha256 "0375a72ad38bc93c339b6054e4aed5283fb52730201c55590f20600e5e93a01b"
+      url "https://github.com/timopruesse/machine_setup/releases/download/v2.4.1/machine_setup-x86_64-apple-darwin.tar.gz"
+      sha256 "2023d547ddfc6e63f778f030e9e91b3330faab3508a5e781fd9fbe8cefc6644d"
     end
   end
 
