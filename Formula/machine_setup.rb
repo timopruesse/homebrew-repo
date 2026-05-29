@@ -16,6 +16,13 @@ class MachineSetup < Formula
     end
   end
 
+  on_linux do
+    on_intel do
+      url "https://github.com/timopruesse/machine_setup/releases/download/v2.4.2/machine_setup-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c5ab46fe40351d4db3b7720d50ed31e5c9c4a40a05d7c2497a1edef7c619f05d"
+    end
+  end
+
   def install
     bin.install "machine_setup"
   end
