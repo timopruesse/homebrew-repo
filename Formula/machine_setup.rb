@@ -1,25 +1,25 @@
 class MachineSetup < Formula
   desc "CLI tool with TUI for automating machine configuration and setup tasks"
   homepage "https://github.com/timopruesse/machine_setup"
-  url "https://github.com/timopruesse/machine_setup/archive/refs/tags/v2.4.5.tar.gz"
-  sha256 "1a0c8eeba909ae6192de1c800c73d4c58ad2947d16899ebc791d9ace44a358b0"
+  url "https://github.com/timopruesse/machine_setup/archive/refs/tags/v2.4.6.tar.gz"
+  sha256 "defa6a853dd875525cb8ad81fb794d1e77a532a3aa5676321ce1f1a69fd8e8b9"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/timopruesse/machine_setup/releases/download/v2.4.5/machine_setup-aarch64-apple-darwin.tar.gz"
-      sha256 "11428d8d77cd898d60d6d98e21afb4455b75b77840a0340026be196a6b51ff59"
+      url "https://github.com/timopruesse/machine_setup/releases/download/v2.4.6/machine_setup-aarch64-apple-darwin.tar.gz"
+      sha256 "8ee09d892d760a474ef9579259a02217f1fc42a00b1900b1e970fb1b4382e00e"
     end
     on_intel do
-      url "https://github.com/timopruesse/machine_setup/releases/download/v2.4.5/machine_setup-x86_64-apple-darwin.tar.gz"
-      sha256 "af5667487978e8a160b1b1c7858e315b2fb7a982dcbb7d8b82302915ba2e3482"
+      url "https://github.com/timopruesse/machine_setup/releases/download/v2.4.6/machine_setup-x86_64-apple-darwin.tar.gz"
+      sha256 "369f24cdf3ec4b70b89c61e02ebca889278419519d8ac16e9d2d7529b25a5834"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/timopruesse/machine_setup/releases/download/v2.4.5/machine_setup-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9d820775764e09e77f575d4563cd1c76e04e4de61a444cc722eae870018f888c"
+      url "https://github.com/timopruesse/machine_setup/releases/download/v2.4.6/machine_setup-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "568921120d77b5239fe32b0256400e3a18c7da61f22af45c4144c4035602bdff"
     end
   end
 
